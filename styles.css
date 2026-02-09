@@ -1402,3 +1402,28 @@ textarea:focus {
         font-size: 0.95rem;
     }
 }
+/* =========================
+   実績（stats）スマホ対応
+========================= */
+@media (max-width: 768px) {
+    .stats {
+      padding: 48px 16px;
+    }
+  
+    .stats-grid {
+      display: flex;
+      flex-direction: column;   /* 横 → 縦 */
+      gap: 16px;
+      align-items: stretch;
+    }
+  
+    .stat-item {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .stat-divider {
+      display: none; /* 縦線はスマホでは消す */
+    }
+  }
+  
