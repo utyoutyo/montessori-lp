@@ -1,312 +1,158 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>おうちモンテ環境デザイン | 間取り×導線×月齢の個別アドバイス</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>おうちモンテ環境デザイン | 間取り×導線×月齢の個別アドバイス</title>
+
+  <!-- GitHub Pages 対応：相対パス -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
 <body>
-    <!-- ナビゲーション -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="nav-brand">ママとこ</a>
-            <ul class="nav-menu">
-                <li><a href="#about">サービスについて</a></li>
-                <li><a href="#features">サービスの特徴</a></li>
-                <li><a href="#pricing">プラン・料金</a></li>
-                <li><a href="#pricing" class="nav-cta">9,800円で申し込む</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+
+  <!-- ナビゲーション -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="nav-brand">ママとこ</a>
+      <ul class="nav-menu">
+        <li><a href="#about">サービスについて</a></li>
+        <li><a href="#features">サービスの特徴</a></li>
+        <li><a href="#pricing">プラン・料金</a></li>
+        <li><a href="#pricing" class="nav-cta">9,800円で申し込む</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ヒーロー -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content reveal">
+        <p class="hero-eyebrow">おうちモンテッソーリ環境デザイン</p>
+        <h1 class="hero-title">
+          今の間取りのままで、<br class="sp-only">
+          子どもの「自分でできた」を<br>育てるお部屋づくり
+        </h1>
+        <p class="hero-subtitle">
+          SNSを探し回るのではなく、あなたのご自宅の間取り・導線・お子さんの月齢に合わせた<br class="pc-only">
+          “オーダーメイドのおうちモンテ環境設計図”をPDFでお届けします。
+        </p>
+        <div class="hero-buttons">
+          <a href="#pricing" class="btn btn-primary">9,800円モニターに申し込む</a>
+          <a href="#about" class="btn btn-secondary">サービスの内容を見る</a>
         </div>
-    </nav>
+      </div>
 
-    <!-- ヒーローセクション -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content reveal">
-                <p class="hero-eyebrow">おうちモンテッソーリ環境デザイン</p>
-                <h1 class="hero-title">今の間取りのままで、<br class="sp-only">子どもの「自分でできた」を<br>育てるお部屋づくり</h1>
-                <p class="hero-subtitle">SNSを探し回るのではなく、あなたのご自宅の間取り・導線・お子さんの月齢に合わせた<br class="pc-only">“オーダーメイドのおうちモンテ環境設計図”をPDFでお届けします。</p>
-                <div class="hero-buttons">
-                    <a href="#pricing" class="btn btn-primary">9,800円モニターに申し込む</a>
-                    <a href="#about" class="btn btn-secondary">サービスの内容を見る</a>
-                </div>
-            </div>
-            <div class="hero-visual reveal">
-                <!-- ※ 実際のファイル名に合わせて src を変更してください -->
-                <img src="image/hero-room.jpg" alt="モンテッソーリ教具が並んだ親子教室の全体の様子">
-            </div>
+      <div class="hero-visual reveal">
+        <img src="./image/hero-room.jpg" alt="モンテッソーリ教具が並んだ親子教室">
+      </div>
+    </div>
+  </section>
+
+  <!-- 実績 -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid reveal">
+        <div class="stat-item">
+          <span class="stat-number">7<span class="stat-unit">年</span></span>
+          <span class="stat-label">おうちモンテ実践歴</span>
         </div>
-    </section>
-
-    <!-- 数字で見る実績 -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid reveal">
-                <div class="stat-item">
-                    <span class="stat-number">7<span class="stat-unit">年</span></span>
-                    <span class="stat-label">おうちモンテ実践歴</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number">8.9<span class="stat-unit">万</span></span>
-                    <span class="stat-label">Instagramフォロワー</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number">3<span class="stat-unit">人</span></span>
-                    <span class="stat-label">3児の母＆国際モンテッソーリ教師</span>
-                </div>
-            </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">8.9<span class="stat-unit">万</span></span>
+          <span class="stat-label">Instagramフォロワー</span>
         </div>
-    </section>
-
-    <!-- サービス紹介 -->
-    <section id="about" class="about">
-        <div class="container">
-            <p class="section-label">About</p>
-            <h2 class="section-title">おうちモンテ環境デザインとは</h2>
-
-            <div class="about-content reveal">
-                <div class="about-photo">
-                    <!-- ※ 実際のファイル名に合わせて src を変更してください -->
-                    <img src="image/shelf-main.jpg" class="photo-portrait" alt="低い棚にモンテッソーリ教具が整然と並んだコーナー">
-                </div>
-
-                <div class="about-text">
-                    <div class="about-item">
-                        <h3 class="about-item-title">今の家・今の暮らしに合わせた、オーダーメイド設計図</h3>
-                        <p class="about-item-text">
-                            「部屋が狭い」「棚を置くスペースがない」「SNSの情報が多すぎて選べない」——
-                            そんな現実の間取りと暮らしに合わせて、玄関・リビング・洗面所などおうち全体を見直し、
-                            <strong>間取り×導線×月齢</strong>の3つの視点から「おうちモンテ環境設計図（PDF）」をお作りします。
-                        </p>
-                    </div>
-
-                    <div class="about-item">
-                        <h3 class="about-item-title">サービスで大切にしていること</h3>
-                        <div class="values-grid">
-                            <div class="value-card reveal">
-                                <div class="value-icon">
-                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M16 4C12 4 8 7 8 12C8 18 16 28 16 28C16 28 24 18 24 12C24 7 20 4 16 4Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <circle cx="16" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/>
-                                    </svg>
-                                </div>
-                                <h4>「自分でできる」導線設計</h4>
-                                <p>広さやおしゃれ家具よりも、「子どもが自分で動ける導線」を最優先に設計します。片づけや身支度が自然としやすくなる配置を一緒に考えます。</p>
-                            </div>
-                            <div class="value-card reveal">
-                                <div class="value-icon">
-                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="6" y="6" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.5"/>
-                                        <path d="M12 16L15 19L20 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                                <h4>月齢と性格に合わせた提案</h4>
-                                <p>0〜6歳のお子さんの月齢や様子に合わせて、「今すぐできる」アクティビティや環境アイデアを厳選。無理なく続けられる形でお渡しします。</p>
-                            </div>
-                            <div class="value-card reveal">
-                                <div class="value-icon">
-                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
-                                        <circle cx="20" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
-                                        <path d="M8 24C8 20 10 18 16 18C22 18 24 20 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                                    </svg>
-                                </div>
-                                <h4>忙しいママにやさしい形</h4>
-                                <p>事前の片づけやZOOMは不要。インスタDMのチャット形式でやりとりし、あとから何度も見返せるPDFと、アフターフォローで伴走します。</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">3<span class="stat-unit">人</span></span>
+          <span class="stat-label">3児の母＆国際モンテ教師</span>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- 教室の特徴 -->
-    <section id="features" class="features">
-        <div class="container">
-            <p class="section-label">Features</p>
-            <h2 class="section-title">サービスの特徴</h2>
-            <div class="features-grid">
-                <div class="feature-card reveal">
-                    <div class="feature-number">01</div>
-                    <h3 class="feature-title">間取り別・導線設計図（PDF）</h3>
-                    <p class="feature-text">
-                        玄関・リビング・洗面所など、今のおうちの間取り写真や図面をもとに、
-                        子どもの動きを想定した導線と配置のアイデアを一枚の設計図にまとめてお渡しします。
-                    </p>
-                </div>
-                <div class="feature-card reveal">
-                    <div class="feature-number">02</div>
-                    <h3 class="feature-title">月齢別アクティビティと生活ルーティン</h3>
-                    <p class="feature-text">
-                        お子さんの月齢と性格に合わせて、「今の家でできる」おうちモンテの活動と、
-                        忙しいママでも回せる1日のざっくりルーティンを、2ヶ月分の提案としてまとめます。
-                    </p>
-                </div>
-                <div class="feature-card reveal">
-                    <div class="feature-number">03</div>
-                    <h3 class="feature-title">DMチャット＋7日間フォロー</h3>
-                    <p class="feature-text">
-                        インスタのDMで、お悩みや間取り・写真を送っていただき、
-                        それをもとにじっくり設計。PDF納品後も7日間、質問や微調整のご相談にお答えします。
-                    </p>
-                </div>
-            </div>
+  <!-- サービス紹介 -->
+  <section id="about" class="about">
+    <div class="container">
+      <p class="section-label">About</p>
+      <h2 class="section-title">おうちモンテ環境デザインとは</h2>
+
+      <div class="about-content reveal">
+        <div class="about-photo">
+          <img src="./image/shelf-main.jpg" class="photo-portrait" alt="モンテ棚">
         </div>
-    </section>
 
-    <!-- 教室の雰囲気ギャラリー -->
-    <section class="gallery">
-        <div class="container">
-            <p class="section-label">Scenes</p>
-            <h2 class="section-title">教室の雰囲気</h2>
-
-            <div class="gallery-grid reveal">
-                <!-- ※ 実際のファイル名に合わせて src を変更してください -->
-                <img src="image/shelf-close1.jpg" class="photo-portrait" alt="モンテッソーリ教具の並んだ棚のクローズアップ">
-                <img src="image/hand-activity.jpg" alt="子どもの手元が映ったモンテッソーリ活動の様子">
-                <img src="image/parent-child.jpg" class="photo-portrait" alt="親子で一緒に取り組んでいる様子">
-            </div>
+        <div class="about-text">
+          <div class="about-item">
+            <h3>今の家に合わせたオーダーメイド設計</h3>
+            <p>
+              間取り・導線・月齢に合わせて、玄関・リビング・洗面所まで含めた
+              <strong>おうち全体のモンテ環境設計図（PDF）</strong>をお作りします。
+            </p>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- 中間CTA -->
-    <section class="mid-cta">
-        <div class="container">
-            <div class="mid-cta-inner reveal">
-                <p class="mid-cta-text">SNSで「正解探し」をし続けるのを、そろそろやめたいママへ</p>
-                <h3 class="mid-cta-title">今のおうち・今の暮らしのまま、<br>お子さんに合ったお部屋の形を一度で知りませんか？</h3>
-                <a href="#pricing" class="btn btn-primary">モニター内容と料金を見る</a>
-            </div>
-        </div>
-    </section>
+  <!-- ギャラリー -->
+  <section class="gallery">
+    <div class="container">
+      <p class="section-label">Scenes</p>
+      <h2 class="section-title">教室の雰囲気</h2>
 
-    <!-- 料金・開催情報 -->
-    <section id="pricing" class="pricing">
-        <div class="container">
-            <p class="section-label">Plan</p>
-            <h2 class="section-title">プラン・料金</h2>
-            <div class="pricing-content">
-                <div class="pricing-info">
-                    <div class="price-cards">
-                        <div class="price-card reveal">
-                            <h4>【モニター】おうちモンテ環境デザイン</h4>
-                            <div class="price-amount">&yen;9,800<span>（税込）</span></div>
-                            <p class="price-description">正規リリース予定価格：&yen;29,800（税込）</p>
-                            <ul class="price-features">
-                                <li>間取り別おうちモンテ設計図（PDF）</li>
-                                <li>月齢別アクティビティ（2ヶ月分）</li>
-                                <li>生活ルーティンのたたき台</li>
-                                <li>声かけテンプレ＆優先順位リスト</li>
-                                <li>PDF納品後7日間のDMフォロー</li>
-                            </ul>
-                            <!-- MOSHの購入ページURLをここに設定してください -->
-                            <a href="https://mosh.jp/your-mosh-page" target="_blank" rel="noopener" class="btn btn-primary btn-lg" style="margin-top: 16px; width: 100%; text-align: center;">
-                                この内容で申し込む（MOSHへ）
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <div class="gallery-grid reveal">
+        <img src="./image/shelf-close1.jpg" alt="">
+        <img src="./image/hand-activity.jpg" alt="">
+        <img src="./image/parent-child.jpg" alt="">
+      </div>
+    </div>
+  </section>
 
-                <div class="schedule-info reveal">
-                    <h3 class="schedule-title">モニター募集の概要</h3>
-                    <div class="schedule-card">
-                        <div class="schedule-item">
-                            <span class="schedule-label">募集枠</span>
-                            <span class="schedule-value">各期 3名さま限定（満席になり次第クローズ）</span>
-                        </div>
-                        <div class="schedule-item">
-                            <span class="schedule-label">対象</span>
-                            <span class="schedule-value">0〜6歳のお子さまがいるご家庭（アクティビティ提案は2人まで）</span>
-                        </div>
-                        <div class="schedule-item">
-                            <span class="schedule-label">やりとりの方法</span>
-                            <span class="schedule-value">Instagram DMでのチャット形式（事前の片づけやZOOMは不要です）</span>
-                        </div>
-                        <div class="schedule-item">
-                            <span class="schedule-label">納品物</span>
-                            <span class="schedule-value">PDFの導線設計資料一式＋7日間のDMフォロー</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- 料金 -->
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <p class="section-label">Plan</p>
+      <h2 class="section-title">プラン・料金</h2>
 
-    <!-- お問い合わせフォーム -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <p class="section-label">Contact</p>
-            <h2 class="section-title">お問い合わせ</h2>
-            <p class="contact-subtitle">ご質問やご相談がございましたら、お気軽にお問い合わせください。</p>
+      <div class="price-card reveal">
+        <h4>【モニター】おうちモンテ環境デザイン</h4>
+        <div class="price-amount">¥9,800<span>（税込）</span></div>
+        <p class="price-description">正規価格予定：¥29,800</p>
 
-            <form id="contact-form" class="contact-form reveal">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">お名前 <span class="required">*</span></label>
-                        <input type="text" id="name" name="name" placeholder="山田 花子" required>
-                    </div>
+        <ul class="price-features">
+          <li>間取り別モンテ設計図（PDF）</li>
+          <li>月齢別アクティビティ（2ヶ月）</li>
+          <li>7日間DMフォロー</li>
+        </ul>
 
-                    <div class="form-group">
-                        <label for="email">メールアドレス <span class="required">*</span></label>
-                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
-                    </div>
-                </div>
+        <a
+          href="https://mosh.jp/your-mosh-page"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-primary btn-lg"
+        >
+          この内容で申し込む（MOSHへ）
+        </a>
+      </div>
+    </div>
+  </section>
 
-                <div class="form-group">
-                    <label for="inquiry-type">お問い合わせ種別</label>
-                    <select id="inquiry-type" name="inquiry-type">
-                        <option value="">選択してください</option>
-                        <option value="trial">体験レッスンのお申し込み</option>
-                        <option value="question">教室についてのご質問</option>
-                        <option value="other">その他</option>
-                    </select>
-                </div>
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 ママとこ. All rights reserved.</p>
+    </div>
+  </footer>
 
-                <div class="form-group">
-                    <label for="message">メッセージ <span class="required">*</span></label>
-                    <textarea id="message" name="message" rows="5" placeholder="お子様の年齢やご質問内容をお書きください" required></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary btn-submit">送信する</button>
-            </form>
-
-            <div id="form-message" class="form-message"></div>
-        </div>
-    </section>
-
-    <!-- フッター -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-main">
-                    <div class="footer-brand">ママとこ</div>
-                    <p class="footer-text">0〜3歳の親子のためのモンテッソーリ教室。<br>子どもの「自分でできた」を一緒に育てます。</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#about">サービスについて</a>
-                    <a href="#features">教室の特徴</a>
-                    <a href="#pricing">料金・開催情報</a>
-                    <a href="#contact">お問い合わせ</a>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <p>&copy; 2026 ママとこ. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <!-- JS -->
+  <script src="./script.js"></script>
 </body>
 </html>
