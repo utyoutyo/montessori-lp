@@ -243,14 +243,21 @@ body {
 }
 
 .btn-primary {
-    background-color: var(--color-primary);
+    background: linear-gradient(135deg, #9B7F5B, #7A6245);
     color: var(--color-surface);
+    box-shadow: 0 6px 18px rgba(107, 86, 64, 0.28);
+    transform: translateY(0);
 }
 
 .btn-primary:hover {
-    background-color: var(--color-primary-dark);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 14px rgba(107, 86, 64, 0.18);
+    background: linear-gradient(135deg, #7A6245, #5E4932);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(83, 65, 46, 0.32);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(83, 65, 46, 0.3);
 }
 
 .btn-secondary {
@@ -324,6 +331,18 @@ body {
    ========================================================================== */
 section {
     padding: var(--space-4xl) 0;
+}
+
+/* スクロール時のフェードイン用 */
+.reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .section-label {

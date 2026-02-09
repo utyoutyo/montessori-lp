@@ -63,28 +63,28 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// スクロールアニメーション（控えめ）
+// スクロールアニメーション（セクションのフェードイン）
 const observerOptions = {
     threshold: 0.15,
-    rootMargin: '0px 0px -30px 0px'
+    rootMargin: '0px 0px -40px 0px',
 };
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
         }
     });
 }, observerOptions);
 
 document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll('.pillar-card, .problem-card, .flow-step, .vision-item');
+    const targets = document.querySelectorAll(
+        '.reveal'
+    );
 
-    animatedElements.forEach((el, index) => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(12px)';
-        el.style.transition = `opacity 0.4s ease ${index * 0.05}s, transform 0.4s ease ${index * 0.05}s`;
-        observer.observe(el);
+    targets.forEach((el, index) => {
+        el.style.transitionDelay = `${index * 40}ms`;
+        revealObserver.observe(el);
     });
 });
