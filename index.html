@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ママとこ - えるえるえるのモンテッソーリ</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ママとこ | 0〜3歳のためのモンテッソーリ親子教室</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    </head>
 <body>
     <!-- ナビゲーション -->
     <nav class="navbar">
         <div class="container">
-            <div class="nav-brand">ママとこ</div>
+            <a href="#" class="nav-brand">ママとこ</a>
             <ul class="nav-menu">
                 <li><a href="#about">サービスについて</a></li>
                 <li><a href="#features">教室の特徴</a></li>
                 <li><a href="#pricing">料金・開催情報</a></li>
-                <li><a href="#contact">お問い合わせ</a></li>
+                <li><a href="#contact" class="nav-cta">体験を予約する</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -30,13 +30,41 @@
 
     <!-- ヒーローセクション -->
     <section class="hero">
+        <div class="hero-bg-shape"></div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">子どもの"自分でできた!"を育む親子教室</h1>
-                <p class="hero-subtitle">モンテッソーリ教育で、子どもの自立心と集中力を育てます</p>
+                <p class="hero-eyebrow">0〜3歳の親子のためのモンテッソーリ教室</p>
+                <h1 class="hero-title">子どもの<br class="sp-only">"自分でできた!"を<br>育む親子教室</h1>
+                <p class="hero-subtitle">モンテッソーリ教育で、子どもの自立心と集中力を、<br class="pc-only">日々の小さな「できた」の積み重ねから育てていきます。</p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">お問い合わせ</a>
+                    <a href="#contact" class="btn btn-primary">体験レッスンに申し込む</a>
                     <a href="#about" class="btn btn-secondary">詳しく見る</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-visual-circle"></div>
+                <div class="hero-visual-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 数字で見る実績 -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">150<span class="stat-unit">組</span></span>
+                    <span class="stat-label">累計参加親子数</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">98<span class="stat-unit">%</span></span>
+                    <span class="stat-label">保護者満足度</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">5<span class="stat-unit">年</span></span>
+                    <span class="stat-label">運営実績</span>
                 </div>
             </div>
         </div>
@@ -45,8 +73,9 @@
     <!-- サービス紹介 -->
     <section id="about" class="about">
         <div class="container">
+            <p class="section-label">About</p>
             <h2 class="section-title">サービスについて</h2>
-            
+
             <div class="about-content">
                 <div class="about-item">
                     <h3 class="about-item-title">モンテッソーリ教育とは</h3>
@@ -61,18 +90,34 @@
                     <h3 class="about-item-title">教室で大切にしていること</h3>
                     <div class="values-grid">
                         <div class="value-card">
-                            <div class="value-icon">👶</div>
+                            <div class="value-icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 4C12 4 8 7 8 12C8 18 16 28 16 28C16 28 24 18 24 12C24 7 20 4 16 4Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="16" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                            </div>
                             <h4>子どもの自主性</h4>
                             <p>子どもが自分で選び、自分で決める力を大切にします。大人は見守り、必要な時にサポートします。</p>
                         </div>
                         <div class="value-card">
-                            <div class="value-icon">🌱</div>
+                            <div class="value-icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="6" y="6" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M12 16L15 19L20 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
                             <h4>適切な環境</h4>
                             <p>0-3歳の発達段階に合わせた教具と環境を用意し、子どもの興味を引き出します。</p>
                         </div>
                         <div class="value-card">
-                            <div class="value-icon">💕</div>
-                            <h4>親のサポート</h4>
+                            <div class="value-icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+                                    <circle cx="20" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M8 24C8 20 10 18 16 18C22 18 24 20 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h4>親子で学ぶ</h4>
                             <p>ママも一緒に学び、家庭でも実践できるモンテッソーリの考え方を身につけられます。</p>
                         </div>
                     </div>
@@ -84,6 +129,7 @@
     <!-- 教室の特徴 -->
     <section id="features" class="features">
         <div class="container">
+            <p class="section-label">Features</p>
             <h2 class="section-title">教室の特徴</h2>
             <div class="features-grid">
                 <div class="feature-card">
@@ -114,17 +160,28 @@
         </div>
     </section>
 
+    <!-- 中間CTA -->
+    <section class="mid-cta">
+        <div class="container">
+            <div class="mid-cta-inner">
+                <p class="mid-cta-text">まずはお気軽に体験レッスンへ</p>
+                <h3 class="mid-cta-title">お子様の「やってみたい」を<br>一緒に見つけませんか？</h3>
+                <a href="#contact" class="btn btn-primary">体験レッスンに申し込む</a>
+            </div>
+        </div>
+    </section>
+
     <!-- 料金・開催情報 -->
     <section id="pricing" class="pricing">
         <div class="container">
+            <p class="section-label">Plan</p>
             <h2 class="section-title">料金・開催情報</h2>
             <div class="pricing-content">
                 <div class="pricing-info">
-                    <h3 class="pricing-title">料金プラン</h3>
                     <div class="price-cards">
                         <div class="price-card">
                             <h4>体験レッスン</h4>
-                            <div class="price-amount">¥2,000</div>
+                            <div class="price-amount">&yen;2,000</div>
                             <p class="price-description">初めての方限定</p>
                             <ul class="price-features">
                                 <li>60分の体験レッスン</li>
@@ -135,10 +192,10 @@
                         <div class="price-card featured">
                             <div class="price-badge">おすすめ</div>
                             <h4>月4回コース</h4>
-                            <div class="price-amount">¥12,000<span>/月</span></div>
+                            <div class="price-amount">&yen;12,000<span>/月</span></div>
                             <p class="price-description">週1回のレッスン</p>
                             <ul class="price-features">
-                                <li>60分のレッスン × 4回</li>
+                                <li>60分のレッスン &times; 4回</li>
                                 <li>モンテッソーリ教具の使用</li>
                                 <li>育児相談サポート</li>
                                 <li>家庭での実践アドバイス</li>
@@ -146,10 +203,10 @@
                         </div>
                         <div class="price-card">
                             <h4>月2回コース</h4>
-                            <div class="price-amount">¥7,000<span>/月</span></div>
+                            <div class="price-amount">&yen;7,000<span>/月</span></div>
                             <p class="price-description">隔週のレッスン</p>
                             <ul class="price-features">
-                                <li>60分のレッスン × 2回</li>
+                                <li>60分のレッスン &times; 2回</li>
                                 <li>モンテッソーリ教具の使用</li>
                                 <li>育児相談サポート</li>
                             </ul>
@@ -181,28 +238,41 @@
     <!-- お問い合わせフォーム -->
     <section id="contact" class="contact">
         <div class="container">
+            <p class="section-label">Contact</p>
             <h2 class="section-title">お問い合わせ</h2>
             <p class="contact-subtitle">ご質問やご相談がございましたら、お気軽にお問い合わせください。</p>
-            
+
             <form id="contact-form" class="contact-form">
-                <div class="form-group">
-                    <label for="name">お名前 <span class="required">*</span></label>
-                    <input type="text" id="name" name="name" required>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">お名前 <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="山田 花子" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">メールアドレス <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    </div>
                 </div>
-                
+
                 <div class="form-group">
-                    <label for="email">メールアドレス <span class="required">*</span></label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="inquiry-type">お問い合わせ種別</label>
+                    <select id="inquiry-type" name="inquiry-type">
+                        <option value="">選択してください</option>
+                        <option value="trial">体験レッスンのお申し込み</option>
+                        <option value="question">教室についてのご質問</option>
+                        <option value="other">その他</option>
+                    </select>
                 </div>
-                
+
                 <div class="form-group">
                     <label for="message">メッセージ <span class="required">*</span></label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
+                    <textarea id="message" name="message" rows="5" placeholder="お子様の年齢やご質問内容をお書きください" required></textarea>
                 </div>
-                
+
                 <button type="submit" class="btn btn-primary btn-submit">送信する</button>
             </form>
-            
+
             <div id="form-message" class="form-message"></div>
         </div>
     </section>
@@ -211,8 +281,16 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">ママとこ</div>
-                <p class="footer-text">モンテッソーリ教育で、子どもの自立心と集中力を育てます</p>
+                <div class="footer-main">
+                    <div class="footer-brand">ママとこ</div>
+                    <p class="footer-text">0〜3歳の親子のためのモンテッソーリ教室。<br>子どもの「自分でできた」を一緒に育てます。</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">サービスについて</a>
+                    <a href="#features">教室の特徴</a>
+                    <a href="#pricing">料金・開催情報</a>
+                    <a href="#contact">お問い合わせ</a>
+                </div>
             </div>
             <div class="footer-copyright">
                 <p>&copy; 2026 ママとこ. All rights reserved.</p>
