@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>おうちモンテッソーリ環境デザイン | 間取り×導線×月齢の個別アドバイス</title>
+        <title>おうちモンテ環境デザイン | 間取り×導線×月齢の個別アドバイス</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,12 +13,12 @@
     <!-- ナビゲーション -->
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="nav-brand">おうちモンテ環境デザイン</a>
+            <a href="#" class="nav-brand">ママとこ</a>
             <ul class="nav-menu">
-                <li><a href="#problems">こんなお悩みありませんか</a></li>
-                <li><a href="#service">サービス内容</a></li>
-                <li><a href="#flow">ご利用の流れ</a></li>
-                <li><a href="#apply" class="nav-cta">モニターに申し込む</a></li>
+                <li><a href="#about">サービスについて</a></li>
+                <li><a href="#features">サービスの特徴</a></li>
+                <li><a href="#pricing">プラン・料金</a></li>
+                <li><a href="#pricing" class="nav-cta">9,800円で申し込む</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -32,263 +32,257 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <p class="hero-eyebrow">3名限定モニター募集</p>
-                <h1 class="hero-title">「うちは狭いから無理」<br>そう思っていませんか？</h1>
-                <p class="hero-subtitle">間取り・導線・月齢から導く、<br class="pc-only">あなたの家だけの環境デザイン。<br>狭くても、賃貸でも、今の暮らしのまま<br class="pc-only">子どもの「自分でできる」を引き出す空間に変わります。</p>
+                <p class="hero-eyebrow">おうちモンテッソーリ環境デザイン</p>
+                <h1 class="hero-title">今の間取りのままで、<br class="sp-only">子どもの「自分でできた」を<br>育てるお部屋づくり</h1>
+                <p class="hero-subtitle">SNSを探し回るのではなく、あなたのご自宅の間取り・導線・お子さんの月齢に合わせた<br class="pc-only">“オーダーメイドのおうちモンテ環境設計図”をPDFでお届けします。</p>
                 <div class="hero-buttons">
-                    <a href="#apply" class="btn btn-primary">モニターに申し込む</a>
-                    <a href="#service" class="btn btn-secondary">詳しく見る</a>
+                    <a href="#pricing" class="btn btn-primary">9,800円モニターに申し込む</a>
+                    <a href="#about" class="btn btn-secondary">サービスの内容を見る</a>
                 </div>
+            </div>
+            <div class="hero-visual">
+                <!-- ※ 実際のファイル名に合わせて src を変更してください -->
+                <img src="image/hero-room.jpg" alt="モンテッソーリ教具が並んだ親子教室の全体の様子">
             </div>
         </div>
     </section>
 
-    <!-- 提供者紹介（信頼構築） -->
-    <section class="provider">
+    <!-- 数字で見る実績 -->
+    <section class="stats">
         <div class="container">
-            <div class="provider-inner">
-                <div class="provider-icon">
-                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="18" cy="14" r="6" stroke="currentColor" stroke-width="1.5"/>
-                        <path d="M6 32C6 25.4 11.4 20 18 20C24.6 20 30 25.4 30 32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">7<span class="stat-unit">年</span></span>
+                    <span class="stat-label">おうちモンテ実践歴</span>
                 </div>
-                <div class="provider-text">
-                    <p class="provider-name">環境デザイナー <strong>エル</strong></p>
-                    <p class="provider-desc">モンテッソーリ教育 国際資格取得。自身も「おうちが狭い」「片付かない」に悩んだ経験から、間取りと月齢に合わせた環境づくりの個別サポートを始めました。</p>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">8.9<span class="stat-unit">万</span></span>
+                    <span class="stat-label">Instagramフォロワー</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">3<span class="stat-unit">人</span></span>
+                    <span class="stat-label">3児の母＆国際モンテッソーリ教師</span>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- お悩みセクション -->
-    <section id="problems" class="problems">
-        <div class="container">
-            <p class="section-label">Problems</p>
-            <h2 class="section-title">こんなお悩み、ありませんか？</h2>
-            <div class="problems-grid">
-                <div class="problem-card">
-                    <span class="problem-icon">
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="3" y="3" width="22" height="22" rx="3" stroke="currentColor" stroke-width="1.5"/>
-                            <path d="M9 9L19 19M19 9L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                        </svg>
-                    </span>
-                    <p class="problem-text">おもちゃや物が常に散らかっていて、<br>部屋がごちゃごちゃしている</p>
-                </div>
-                <div class="problem-card">
-                    <span class="problem-icon">
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 24L4 8L12 4L20 8L20 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M10 24V17H14V24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <rect x="7" y="10" width="3" height="3" stroke="currentColor" stroke-width="1"/>
-                            <rect x="14" y="10" width="3" height="3" stroke="currentColor" stroke-width="1"/>
-                        </svg>
-                    </span>
-                    <p class="problem-text">おうちモンテに興味はあるけど、<br>家が狭くて無理だと思っている</p>
-                </div>
-                <div class="problem-card">
-                    <span class="problem-icon">
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
-                            <circle cx="18" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
-                            <path d="M6 24C6 20 8 18 14 18C20 18 22 20 22 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                        </svg>
-                    </span>
-                    <p class="problem-text">きょうだいのスペースが分けられず、<br>取り合いやケンカが頻発している</p>
-                </div>
-                <div class="problem-card">
-                    <span class="problem-icon">
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="1.5"/>
-                            <path d="M14 8V14L18 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </span>
-                    <p class="problem-text">仕事復帰が近づき、<br>子どもの自立に不安を感じている</p>
-                </div>
-            </div>
-            <p class="problems-lead">これらの悩み、<strong>お部屋の環境を整えること</strong>で解決できるかもしれません。</p>
         </div>
     </section>
 
     <!-- サービス紹介 -->
-    <section id="service" class="service">
+    <section id="about" class="about">
         <div class="container">
-            <p class="section-label">Service</p>
-            <h2 class="section-title">おうちモンテッソーリ環境デザインとは</h2>
-            <p class="service-intro">お子さまの月齢・ご家庭の間取り・日々の生活導線をもとに、<br class="pc-only">モンテッソーリ教育の視点からお部屋の環境を個別にデザインするサービスです。</p>
+            <p class="section-label">About</p>
+            <h2 class="section-title">おうちモンテ環境デザインとは</h2>
 
-            <div class="pillars">
-                <div class="pillar-card">
-                    <div class="pillar-number">01</div>
-                    <h3 class="pillar-title">間取り分析</h3>
-                    <p class="pillar-text">今のお部屋の間取りを活かし、限られたスペースでも子どもの活動エリアを確保する方法をご提案します。「狭いから無理」ではなく「この間取りだからこそ」の解決策を。</p>
+            <div class="about-content">
+                <div class="about-photo">
+                    <!-- ※ 実際のファイル名に合わせて src を変更してください -->
+                    <img src="image/shelf-main.jpg" class="photo-portrait" alt="低い棚にモンテッソーリ教具が整然と並んだコーナー">
                 </div>
-                <div class="pillar-card">
-                    <div class="pillar-number">02</div>
-                    <h3 class="pillar-title">導線設計</h3>
-                    <p class="pillar-text">子どもが自然と「自分で」動ける導線を設計します。着替え・食事・遊びの流れがスムーズになることで、親の声かけが減り、子どもの自主性が育ちます。</p>
-                </div>
-                <div class="pillar-card">
-                    <div class="pillar-number">03</div>
-                    <h3 class="pillar-title">月齢別対応</h3>
-                    <p class="pillar-text">同じ0〜3歳でも、月齢によって必要な環境は大きく異なります。お子さまの今の発達段階に合わせた教具の配置や家具の選び方をアドバイスします。</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- 変化のビジョン -->
-    <section class="vision">
-        <div class="container">
-            <div class="vision-inner">
-                <p class="vision-label">このサービスで変わること</p>
-                <div class="vision-grid">
-                    <div class="vision-item">
-                        <span class="vision-before">片付けても片付けてもすぐ散らかる</span>
-                        <span class="vision-arrow">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                        <span class="vision-after">子ども自身が片付けられる仕組みに</span>
+                <div class="about-text">
+                    <div class="about-item">
+                        <h3 class="about-item-title">今の家・今の暮らしに合わせた、オーダーメイド設計図</h3>
+                        <p class="about-item-text">
+                            「部屋が狭い」「棚を置くスペースがない」「SNSの情報が多すぎて選べない」——
+                            そんな現実の間取りと暮らしに合わせて、玄関・リビング・洗面所などおうち全体を見直し、
+                            <strong>間取り×導線×月齢</strong>の3つの視点から「おうちモンテ環境設計図（PDF）」をお作りします。
+                        </p>
                     </div>
-                    <div class="vision-item">
-                        <span class="vision-before">「ダメ」「やめて」と言い続ける毎日</span>
-                        <span class="vision-arrow">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                        <span class="vision-after">環境が整い、声かけが自然と減る</span>
-                    </div>
-                    <div class="vision-item">
-                        <span class="vision-before">SNSの素敵な部屋と比べて落ち込む</span>
-                        <span class="vision-arrow">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                        <span class="vision-after">「うちの間取り」に合った最適解がわかる</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- 利用の流れ -->
-    <section id="flow" class="flow">
-        <div class="container">
-            <p class="section-label">Flow</p>
-            <h2 class="section-title">ご利用の流れ</h2>
-            <div class="flow-steps">
-                <div class="flow-step">
-                    <div class="flow-step-number">1</div>
-                    <div class="flow-step-content">
-                        <h3>お申し込み・ヒアリング</h3>
-                        <p>お申し込み後、間取り図やお部屋の写真をお送りいただきます。お子さまの月齢や日々のお悩みについてヒアリングシートにご回答いただきます。</p>
-                    </div>
-                </div>
-                <div class="flow-step">
-                    <div class="flow-step-number">2</div>
-                    <div class="flow-step-content">
-                        <h3>環境デザインのご提案</h3>
-                        <p>間取り・導線・月齢を分析し、あなたのご家庭に合わせた環境デザインプランを作成します。家具の配置や教具の選び方まで具体的にご提案します。</p>
-                    </div>
-                </div>
-                <div class="flow-step">
-                    <div class="flow-step-number">3</div>
-                    <div class="flow-step-content">
-                        <h3>個別フィードバック</h3>
-                        <p>提案内容についてのご質問やご相談にお答えします。実際に環境を変えてみた後のフォローアップも行います。</p>
+                    <div class="about-item">
+                        <h3 class="about-item-title">サービスで大切にしていること</h3>
+                        <div class="values-grid">
+                            <div class="value-card">
+                                <div class="value-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 4C12 4 8 7 8 12C8 18 16 28 16 28C16 28 24 18 24 12C24 7 20 4 16 4Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="16" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/>
+                                    </svg>
+                                </div>
+                                <h4>「自分でできる」導線設計</h4>
+                                <p>広さやおしゃれ家具よりも、「子どもが自分で動ける導線」を最優先に設計します。片づけや身支度が自然としやすくなる配置を一緒に考えます。</p>
+                            </div>
+                            <div class="value-card">
+                                <div class="value-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="6" y="6" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.5"/>
+                                        <path d="M12 16L15 19L20 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h4>月齢と性格に合わせた提案</h4>
+                                <p>0〜6歳のお子さんの月齢や様子に合わせて、「今すぐできる」アクティビティや環境アイデアを厳選。無理なく続けられる形でお渡しします。</p>
+                            </div>
+                            <div class="value-card">
+                                <div class="value-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+                                        <circle cx="20" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+                                        <path d="M8 24C8 20 10 18 16 18C22 18 24 20 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <h4>忙しいママにやさしい形</h4>
+                                <p>事前の片づけやZOOMは不要。インスタDMのチャット形式でやりとりし、あとから何度も見返せるPDFと、アフターフォローで伴走します。</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
-    <section id="apply" class="cta-section">
+    <!-- 教室の特徴 -->
+    <section id="features" class="features">
         <div class="container">
-            <div class="cta-inner">
-                <p class="cta-badge">3名限定</p>
-                <h2 class="cta-title">モニター募集中</h2>
-                <p class="cta-desc">モニター価格でサービスをご体験いただけます。<br>お申し込み後、サービス改善のためのフィードバックにご協力をお願いしております。</p>
-                <div class="cta-details">
-                    <div class="cta-detail-item">
-                        <span class="cta-detail-label">募集人数</span>
-                        <span class="cta-detail-value">3名限定</span>
-                    </div>
-                    <div class="cta-detail-item">
-                        <span class="cta-detail-label">対象</span>
-                        <span class="cta-detail-value">0〜3歳のお子さまがいるご家庭</span>
-                    </div>
+            <p class="section-label">Features</p>
+            <h2 class="section-title">サービスの特徴</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-number">01</div>
+                    <h3 class="feature-title">間取り別・導線設計図（PDF）</h3>
+                    <p class="feature-text">
+                        玄関・リビング・洗面所など、今のおうちの間取り写真や図面をもとに、
+                        子どもの動きを想定した導線と配置のアイデアを一枚の設計図にまとめてお渡しします。
+                    </p>
                 </div>
-                <a href="https://note.com/mamatoko_log/n/n0ac47837bd9e" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">note記事から申し込む</a>
-                <p class="cta-note">※ 定員に達し次第、募集を締め切ります</p>
+                <div class="feature-card">
+                    <div class="feature-number">02</div>
+                    <h3 class="feature-title">月齢別アクティビティと生活ルーティン</h3>
+                    <p class="feature-text">
+                        お子さんの月齢と性格に合わせて、「今の家でできる」おうちモンテの活動と、
+                        忙しいママでも回せる1日のざっくりルーティンを、2ヶ月分の提案としてまとめます。
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">03</div>
+                    <h3 class="feature-title">DMチャット＋7日間フォロー</h3>
+                    <p class="feature-text">
+                        インスタのDMで、お悩みや間取り・写真を送っていただき、
+                        それをもとにじっくり設計。PDF納品後も7日間、質問や微調整のご相談にお答えします。
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- よくある質問 -->
-    <section class="faq">
+    <!-- 教室の雰囲気ギャラリー -->
+    <section class="gallery">
         <div class="container">
-            <p class="section-label">FAQ</p>
-            <h2 class="section-title">よくあるご質問</h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>賃貸でも利用できますか？</span>
-                        <span class="faq-toggle">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>はい、もちろんです。壁に穴を開けたり、大きなリフォームは必要ありません。今ある家具の配置換えや、手軽に取り入れられる工夫を中心にご提案します。</p>
+            <p class="section-label">Scenes</p>
+            <h2 class="section-title">教室の雰囲気</h2>
+
+            <div class="gallery-grid">
+                <!-- ※ 実際のファイル名に合わせて src を変更してください -->
+                <img src="image/shelf-close1.jpg" class="photo-portrait" alt="モンテッソーリ教具の並んだ棚のクローズアップ">
+                <img src="image/hand-activity.jpg" alt="子どもの手元が映ったモンテッソーリ活動の様子">
+                <img src="image/parent-child.jpg" class="photo-portrait" alt="親子で一緒に取り組んでいる様子">
+            </div>
+        </div>
+    </section>
+
+    <!-- 中間CTA -->
+    <section class="mid-cta">
+        <div class="container">
+            <div class="mid-cta-inner">
+                <p class="mid-cta-text">SNSで「正解探し」をし続けるのを、そろそろやめたいママへ</p>
+                <h3 class="mid-cta-title">今のおうち・今の暮らしのまま、<br>お子さんに合ったお部屋の形を一度で知りませんか？</h3>
+                <a href="#pricing" class="btn btn-primary">モニター内容と料金を見る</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 料金・開催情報 -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <p class="section-label">Plan</p>
+            <h2 class="section-title">プラン・料金</h2>
+            <div class="pricing-content">
+                <div class="pricing-info">
+                    <div class="price-cards">
+                        <div class="price-card">
+                            <h4>【モニター】おうちモンテ環境デザイン</h4>
+                            <div class="price-amount">&yen;9,800<span>（税込）</span></div>
+                            <p class="price-description">正規リリース予定価格：&yen;29,800（税込）</p>
+                            <ul class="price-features">
+                                <li>間取り別おうちモンテ設計図（PDF）</li>
+                                <li>月齢別アクティビティ（2ヶ月分）</li>
+                                <li>生活ルーティンのたたき台</li>
+                                <li>声かけテンプレ＆優先順位リスト</li>
+                                <li>PDF納品後7日間のDMフォロー</li>
+                            </ul>
+                            <!-- MOSHの購入ページURLをここに設定してください -->
+                            <a href="https://mosh.jp/your-mosh-page" target="_blank" rel="noopener" class="btn btn-primary btn-lg" style="margin-top: 16px; width: 100%; text-align: center;">
+                                この内容で申し込む（MOSHへ）
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>部屋がとても狭いのですが大丈夫ですか？</span>
-                        <span class="faq-toggle">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>狭いお部屋だからこそ、環境デザインが効果を発揮します。限られたスペースを最大限に活かすご提案をいたします。</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>きょうだいがいる場合も対応できますか？</span>
-                        <span class="faq-toggle">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>はい。きょうだいそれぞれの月齢・発達段階を考慮し、スペースの分け方や共有エリアの使い方をご提案します。</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>モンテッソーリ教育の知識がなくても大丈夫ですか？</span>
-                        <span class="faq-toggle">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>まったく問題ありません。専門知識がなくてもすぐに実践できるよう、わかりやすくご説明いたします。</p>
+
+                <div class="schedule-info">
+                    <h3 class="schedule-title">モニター募集の概要</h3>
+                    <div class="schedule-card">
+                        <div class="schedule-item">
+                            <span class="schedule-label">募集枠</span>
+                            <span class="schedule-value">各期 3名さま限定（満席になり次第クローズ）</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-label">対象</span>
+                            <span class="schedule-value">0〜6歳のお子さまがいるご家庭（アクティビティ提案は2人まで）</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-label">やりとりの方法</span>
+                            <span class="schedule-value">Instagram DMでのチャット形式（事前の片づけやZOOMは不要です）</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-label">納品物</span>
+                            <span class="schedule-value">PDFの導線設計資料一式＋7日間のDMフォロー</span>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせフォーム -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <p class="section-label">Contact</p>
+            <h2 class="section-title">お問い合わせ</h2>
+            <p class="contact-subtitle">ご質問やご相談がございましたら、お気軽にお問い合わせください。</p>
+
+            <form id="contact-form" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">お名前 <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="山田 花子" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">メールアドレス <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="inquiry-type">お問い合わせ種別</label>
+                    <select id="inquiry-type" name="inquiry-type">
+                        <option value="">選択してください</option>
+                        <option value="trial">体験レッスンのお申し込み</option>
+                        <option value="question">教室についてのご質問</option>
+                        <option value="other">その他</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">メッセージ <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="5" placeholder="お子様の年齢やご質問内容をお書きください" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit">送信する</button>
+            </form>
+
+            <div id="form-message" class="form-message"></div>
         </div>
     </section>
 
@@ -297,18 +291,18 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-main">
-                    <div class="footer-brand">おうちモンテ環境デザイン</div>
-                    <p class="footer-text">間取り×導線×月齢から導く、<br>あなたの家だけの環境デザイン。</p>
+                    <div class="footer-brand">ママとこ</div>
+                    <p class="footer-text">0〜3歳の親子のためのモンテッソーリ教室。<br>子どもの「自分でできた」を一緒に育てます。</p>
                 </div>
                 <div class="footer-links">
-                    <a href="#problems">お悩み</a>
-                    <a href="#service">サービス内容</a>
-                    <a href="#flow">ご利用の流れ</a>
-                    <a href="#apply">お申し込み</a>
+                    <a href="#about">サービスについて</a>
+                    <a href="#features">教室の特徴</a>
+                    <a href="#pricing">料金・開催情報</a>
+                    <a href="#contact">お問い合わせ</a>
                 </div>
             </div>
             <div class="footer-copyright">
-                <p>&copy; 2026 おうちモンテッソーリ環境デザイン. All rights reserved.</p>
+                <p>&copy; 2026 ママとこ. All rights reserved.</p>
             </div>
         </div>
     </footer>

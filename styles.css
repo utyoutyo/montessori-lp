@@ -12,12 +12,13 @@
 
 :root {
     /* Colors - 落ち着いたナチュラルトーン（3色ルール） */
-    --color-bg: #FDFBF7;
-    --color-bg-warm: #F5F0E8;
-    --color-bg-soft: #EDE7DC;
+    --color-bg: #FDFBF7;          /* ベース：やや黄みのアイボリー */
+    --color-bg-warm: #F6F1E7;      /* ヒーローやセクション背景用の温かいアイボリー */
+    --color-bg-soft: #ECE5DA;      /* ややグレー寄りのアイボリー */
+    --color-bg-gray: #F3F1ED;      /* グレイッシュな背景 */
     --color-surface: #FFFFFF;
-    --color-primary: #8B7355;
-    --color-primary-dark: #6B5640;
+    --color-primary: #8B7355;      /* ナチュラルな木目ブラウン */
+    --color-primary-dark: #66523C; /* 落ち着いた濃い木目 */
     --color-primary-light: #B8A68E;
     --color-accent: #C17F59;
     --color-text: #3A3330;
@@ -161,12 +162,17 @@ body {
 .hero {
     background-color: var(--color-bg-warm);
     padding: var(--space-5xl) 0 var(--space-4xl);
-    text-align: center;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3xl);
 }
 
 .hero-content {
-    max-width: 680px;
-    margin: 0 auto;
+    max-width: 520px;
 }
 
 .hero-eyebrow {
@@ -204,6 +210,19 @@ body {
     gap: var(--space-md);
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.hero-visual {
+    flex: 1;
+    max-width: 380px;
+}
+
+.hero-visual img {
+    width: 100%;
+    display: block;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    object-fit: cover;
 }
 
 /* ==========================================================================
@@ -325,6 +344,412 @@ section {
     text-align: center;
     margin-bottom: var(--space-3xl);
     letter-spacing: 0.04em;
+}
+
+/* ==========================================================================
+   数字で見る実績
+   ========================================================================== */
+.stats {
+    background-color: var(--color-bg-soft);
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: var(--space-2xl);
+}
+
+.stat-item {
+    text-align: center;
+    padding: var(--space-lg) var(--space-xl);
+    background-color: var(--color-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    min-width: 140px;
+}
+
+.stat-number {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+}
+
+.stat-unit {
+    font-size: 1rem;
+}
+
+.stat-label {
+    display: block;
+    margin-top: var(--space-sm);
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+}
+
+.stat-divider {
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.04);
+    align-self: stretch;
+}
+
+/* ==========================================================================
+   サービス紹介（About）
+   ========================================================================== */
+.about {
+    background-color: var(--color-bg);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1.1fr 1.4fr;
+    gap: var(--space-2xl);
+    align-items: flex-start;
+}
+
+.about-photo img {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    object-fit: cover;
+}
+
+.about-item + .about-item {
+    margin-top: var(--space-2xl);
+}
+
+.about-item-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--space-md);
+}
+
+.about-item-text {
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    line-height: 1.9;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+}
+
+.value-card {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    border: 1px solid var(--color-border);
+}
+
+.value-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    background-color: var(--color-bg-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.value-card h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--space-xs);
+}
+
+.value-card p {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+}
+
+/* ==========================================================================
+   教室の特徴
+   ========================================================================== */
+.features {
+    background-color: var(--color-bg-warm);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+}
+
+.feature-card {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl) var(--space-lg);
+    border: 1px solid var(--color-border);
+}
+
+.feature-number {
+    font-family: var(--font-serif);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-primary-light);
+    opacity: 0.7;
+    margin-bottom: var(--space-sm);
+}
+
+.feature-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--space-sm);
+}
+
+.feature-text {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    line-height: 1.9;
+}
+
+/* ==========================================================================
+   中間CTA
+   ========================================================================== */
+.mid-cta {
+    background-color: var(--color-bg-soft);
+}
+
+.mid-cta-inner {
+    text-align: center;
+    padding: var(--space-3xl) var(--space-2xl);
+    background-color: var(--color-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.mid-cta-text {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-sm);
+    letter-spacing: 0.08em;
+}
+
+.mid-cta-title {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--space-xl);
+    line-height: 1.7;
+}
+
+/* ==========================================================================
+   料金・開催情報
+   ========================================================================== */
+.pricing {
+    background-color: var(--color-bg);
+}
+
+.pricing-content {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: var(--space-3xl);
+    align-items: flex-start;
+}
+
+.price-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    gap: var(--space-lg);
+}
+
+.price-card {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl) var(--space-lg);
+    border: 1px solid var(--color-border);
+    position: relative;
+}
+
+.price-card.featured {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+}
+
+.price-badge {
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-md);
+    font-size: 0.75rem;
+    color: var(--color-surface);
+    background-color: var(--color-primary);
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+}
+
+.price-amount {
+    font-family: var(--font-serif);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin: var(--space-sm) 0 var(--space-xs);
+}
+
+.price-amount span {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin-left: 4px;
+}
+
+.price-description {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-md);
+}
+
+.price-features {
+    list-style: none;
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.schedule-info {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl) var(--space-xl);
+    border: 1px solid var(--color-border);
+}
+
+.schedule-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--space-lg);
+}
+
+.schedule-item + .schedule-item {
+    margin-top: var(--space-md);
+}
+
+.schedule-label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    letter-spacing: 0.08em;
+    margin-bottom: 2px;
+}
+
+.schedule-value {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+
+/* ==========================================================================
+   お問い合わせ
+   ========================================================================== */
+.contact {
+    background-color: var(--color-bg-soft);
+}
+
+.contact-subtitle {
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-2xl);
+}
+
+.contact-form {
+    max-width: 640px;
+    margin: 0 auto;
+    background-color: var(--color-surface);
+    padding: var(--space-2xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+}
+
+.form-group {
+    margin-bottom: var(--space-lg);
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: var(--space-xs);
+}
+
+.required {
+    color: var(--color-accent);
+    font-size: 0.8rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border);
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: var(--color-text);
+    background-color: #FFFEFB;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color-primary-light);
+    box-shadow: 0 0 0 2px rgba(184, 166, 142, 0.25);
+}
+
+.btn-submit {
+    width: 100%;
+    margin-top: var(--space-md);
+}
+
+.form-message {
+    max-width: 640px;
+    margin: var(--space-lg) auto 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* ==========================================================================
+   ギャラリー
+   ========================================================================== */
+.gallery {
+    background-color: var(--color-bg);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: var(--radius-md);
+    object-fit: cover;
+    box-shadow: var(--shadow-sm);
+}
+
+/* 縦長写真用 */
+.photo-portrait {
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
 }
 
 /* ==========================================================================
@@ -849,6 +1274,15 @@ section {
         padding: var(--space-4xl) 0 var(--space-3xl);
     }
 
+    .hero .container {
+        flex-direction: column;
+    }
+
+    .hero-visual {
+        max-width: 320px;
+        margin-top: var(--space-2xl);
+    }
+
     .hero-title {
         font-size: 1.8rem;
     }
@@ -892,6 +1326,34 @@ section {
     .provider-inner {
         flex-direction: column;
         text-align: center;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-content {
+        grid-template-columns: 1fr;
+    }
+
+    .price-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
     }
 
     .flow-steps::before {
